@@ -1,5 +1,6 @@
 package io.agileintelligence.ppmtool.web;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +15,7 @@ import io.agileintelligence.ppmtool.services.ProjectService;
 @RequestMapping("/api/project")
 public class ProjectController {
 	
+	@Autowired
 	private ProjectService projectService;
 	
 	@PostMapping("")
